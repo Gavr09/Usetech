@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "03435107-713f-4432-91fe-77e6e0d25418",
+		"name": "testUsetech",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "testFile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "multipartFile",
+							"type": "file",
+							"src": "/D:/GitHub/Usetech/ds1.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "testPrediction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "the_file",
+							"type": "file",
+							"src": "/D:/GitHub/Usetech/X_test.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"upload"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
